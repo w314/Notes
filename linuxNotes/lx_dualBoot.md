@@ -15,7 +15,6 @@ linux, windows, dualboot
 Used [freecodecamp guide](https://www.freecodecamp.org/news/how-to-dual-boot-windows-10-and-ubuntu-linux-dual-booting-tutorial/)
 
 ### 1. Check if BIOS is in UEFI mode
-
 For the two operating system to see each other you `BIOS` has to be in `UEFI` mode.
 
 To check the mode of your BIOS search for `system information` and `BIOS mode`.
@@ -27,6 +26,8 @@ Download `Ubuntu` in `ISO image`format from Ubuntu distro website.
 Create Ubuntu Bootable USB Drive:
 
 - download [Rufus](https://rufus.ie/en/) bootalbe USB drive creator
+- run `Rufus` as administrator when creating the image, otherwise you'll get a:<br>
+`error: file /casper/val inuz not found.`
 
 ### 3. Create Partitions
 
@@ -35,3 +36,7 @@ Create Ubuntu Bootable USB Drive:
 #### 3.2 create partition for shared storage drive
 
 ### 4. install ubuntu
+
+
+After installing Ubuntu and trying to open windows again, first it wanted a Bitlocker recovery key. It could be found on the my microsoft account as the instructions on the screen said.
+
