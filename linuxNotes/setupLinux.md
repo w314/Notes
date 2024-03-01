@@ -72,6 +72,28 @@ Install Chrome .deb package on your system:
 sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
 
+## Node.js install
+- Source: [how to install nodejs on ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04)
+- DO NOT USE `sudo apt install nodejs`, 
+it installs a way too old version.
+
+### Install NVM (Node Version Manager)
+- use [nvm github page](https://github.com/nvm-sh/nvm?tab=readme-ov-file) for instructiosn
+- download and install `nvm` with
+```bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+### Use NVM to install Node.js
+List available node version with:
+```bash
+nvm list-remote
+```
+
+Install desired version with:
+```bash
+nvm install v20.11.1
+```
 
 ## How to Install Linux on Windows machine
 
